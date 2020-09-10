@@ -1,10 +1,11 @@
-import BlogPost from "../components/BlogPost"
+import BlogList from "../components/BlogList"
 import Layout from "../layouts/MarketingLayout"
 
-export default function Home() {
+export default function Blog() {
+  const handleClick = console.log
   return (
     <Layout>
-      <BlogPost />
+      <BlogList onClick={handleClick} />
     </Layout>
   )
 }

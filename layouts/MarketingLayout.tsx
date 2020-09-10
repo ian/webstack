@@ -1,7 +1,13 @@
 import Header from "../components/Header"
 
-export default ({ children, hero }) => {
-  console.log("hero", hero)
+type Props = {
+  children: React.ReactNode
+  hero?: React.ReactNode
+}
+
+export default (props: Props) => {
+  const { children, hero } = props
+
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-0">

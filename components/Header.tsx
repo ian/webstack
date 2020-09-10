@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export const Header = () => {
   return (
     <nav className="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
@@ -35,30 +37,16 @@ export const Header = () => {
           </div>
         </div>
         <div className="hidden md:block md:ml-10">
-          <a
-            href="#"
-            className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-          >
-            Product
-          </a>
-          <a
-            href="#"
-            className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-          >
-            Features
-          </a>
-          <a
-            href="#"
-            className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-          >
-            Marketplace
-          </a>
-          <a
-            href="#"
-            className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-          >
-            Company
-          </a>
+          <Link href="/">
+            <a className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              Home
+            </a>
+          </Link>
+          <Link href="/blog">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              Blog
+            </a>
+          </Link>
         </div>
       </div>
       <div className="hidden md:block text-right">
