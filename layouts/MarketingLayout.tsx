@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import Header from "../components/Header"
 
 type Props = {
@@ -11,7 +12,7 @@ export default (props: Props) => {
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-0">
-        <svg
+        {/* <svg
           className="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8"
           width={640}
           height={784}
@@ -50,13 +51,15 @@ export default (props: Props) => {
             height={784}
             fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)"
           />
-        </svg>
+        </svg> */}
       </div>
       <div className="relative pt-6">
         <Header />
         {hero}
         <div className="mt-16">{children}</div>
       </div>
+
+      <Footer />
     </div>
   )
 }
