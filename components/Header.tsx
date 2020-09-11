@@ -6,9 +6,14 @@ export const Header = () => {
       <div className="flex items-center flex-1">
         <div className="flex items-center justify-between w-full md:w-auto">
           <a href="#" aria-label="Home">
-            <img
+            {/* <img
               className="h-8 w-auto sm:h-10"
               src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
+              alt="Logo"
+            /> */}
+            <img
+              src={require("../assets/LoanShop.svg")}
+              className="h-8 w-auto sm:h-10"
               alt="Logo"
             />
           </a>
@@ -54,7 +59,7 @@ export const Header = () => {
           <span className="inline-flex rounded-md shadow-xs">
             <a
               href="#"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out"
             >
               Log in
             </a>

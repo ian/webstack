@@ -1,7 +1,8 @@
 // https://remysharp.com/2019/11/04/nice-imports-with-nextjs#:~:text=const%20path%20%3D%20require('path')%3B
 const path = require("path")
+const withImages = require("next-images")
 
-module.exports = {
+module.exports = withImages({
   webpack: (config) => {
     config.resolve.alias["~"] = path.resolve(__dirname)
     return config
@@ -11,4 +12,4 @@ module.exports = {
     GRAPHQL_DEBUG: true,
     GRAPHQL_URL: process.env.GRAPHQL_URL,
   },
-}
+})
